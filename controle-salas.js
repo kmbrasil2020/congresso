@@ -16,10 +16,10 @@ var sala2FormPresenca = sala1FormPresenca;
 
 // Sala 3:
 var sala3Bandeira = 'us';
-var sala3TituloMenu = 'Management of Smart Water Systems - Operational and Security Aspects';
+var sala3TituloMenu = 'KM as a Supporting Tool for COVID-19 Crisis Mitigation';
 //var sala3TituloDescricao = 'titulo Sala 3';
-var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLScofvOjrZtS-wBR4U1lYil74t7XXZXwWmNwb-2CrGuC9-OseQ/viewform?usp=sf_link';
-var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSeSlm-n5tGxxofrI9PoSKA213TeM-Ju1wBAczwcSeDkk1cKIg/viewform?usp=sf_link';
+var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSelrsJSo3053ZZRi6iARwE1BGO-KOKN1iQYwtamCp_oy8XqBw/viewform?usp=sf_link';
+var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSfuRKXrjKjt4hm6YalQlIG0vMkfXNFUGvSRbSMPBE6KlFkWfw/viewform?usp=sf_link';
 //var sala3Descricao = 'descrição Sala 3';
 
 // Sala 4:
