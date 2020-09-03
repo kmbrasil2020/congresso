@@ -1,9 +1,9 @@
 // Sala 1:
 var sala1Bandeira = 'br';
-var sala1TituloMenu = 'Tecnologia da Informação Inteligente e Gestão do Conhecimento';
+var sala1TituloMenu = 'A Descontinuidade da Gestão Pública e a GC';
 //var sala1TituloDescricao = 'titulo Sala 1';
-var sala1FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSdHpF72iDFi35EHlV6o2CNxdb5x_ryxVX0sNXtanDAUPPdumQ/viewform?usp=sf_link';
-var sala1FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSf42H62JRlycIQCBLwS4EmDWWiTmbOD7_PqERpkkVj_ZlS3HQ/viewform?usp=sf_link';
+var sala1FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSfA3Ka4w1N109EfvHO8eN4o0b1NHDGQ0tnGpLbQpoII8_ELSg/viewform?usp=sf_link';
+var sala1FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSe8bNF8P8RaMYIxB_wnJCcW7PExv2S4Do4SWerCKxE0p51qqw/viewform?usp=sf_link';
 //var sala1Descricao = 'Filipe';
 
 // Sala 2:
@@ -16,10 +16,10 @@ var sala2FormPresenca = sala1FormPresenca;
 
 // Sala 3:
 var sala3Bandeira = 'us';
-var sala3TituloMenu = 'THE KM Role for Environmental Policies Definition';
+var sala3TituloMenu = 'Management of Smart Water Systems - Operational and Security Aspects';
 //var sala3TituloDescricao = 'titulo Sala 3';
-var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSd7Rtc6dceXXqoDMaAP_m-772jgzOORoTlrAFPQvt9tkA-cxw/viewform?usp=sf_link';
-var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLScWQt6jkcfS4ce0JeBBEu1Dx1PkYZ7vEPPJ-mHjTLhlGrt8kg/viewform?usp=sf_link';
+var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLScofvOjrZtS-wBR4U1lYil74t7XXZXwWmNwb-2CrGuC9-OseQ/viewform?usp=sf_link';
+var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSeSlm-n5tGxxofrI9PoSKA213TeM-Ju1wBAczwcSeDkk1cKIg/viewform?usp=sf_link';
 //var sala3Descricao = 'descrição Sala 3';
 
 // Sala 4:
@@ -31,11 +31,11 @@ var sala4FormPresenca = sala3FormPresenca;
 //var sala4Descricao = 'descrição Sala 4';
 
 // Sala 4:
-var sala5Bandeira = 'us';
-var sala5TituloMenu = 'VAZIA';
+var sala5Bandeira = 'br';
+var sala5TituloMenu = 'Trilha de Casos: Programas de GC e Transformação Digital';
 //var sala5TituloDescricao = 'titulo Sala 5';
-var sala5FormPerguntas = '';
-var sala5FormPresenca = '';
+var sala5FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSdTNXAXJQQjEVBMDyQZ1PY1Hqg6NyC6olRitKvsRR_PyOyeXQ/viewform?usp=sf_link';
+var sala5FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSdmpRBpSiYmhzFklCsnm0vlEXP1D425Zn8h0TvT-E6RXFvnPg/viewform?usp=sf_link';
 //var sala5Descricao = '';
 var sala5VideoID = 'z6BXPbTpP9Y';
 
