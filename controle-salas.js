@@ -19,7 +19,7 @@ var sala3Bandeira = 'us';
 var sala3TituloMenu = 'KM as a Supporting Tool for Urban Organizing';
 //var sala3TituloDescricao = 'titulo Sala 3';
 var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSf_mZB6wM0oEDP-cCLQq5DgYLWjvns_LK8mOZ7Zcp45s66bkg/viewform?usp=sf_link';
-var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSfI2L-UiSrfkxIeviyXSBCDpYnmoiD6KV8lPbgnkS-jhVKnoA/viewform?usp=sf_linka Sala 3';
+var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSfI2L-UiSrfkxIeviyXSBCDpYnmoiD6KV8lPbgnkS-jhVKnoA/viewform?usp=sf_link';
 var sala3Descricao = 'descrição Sala 3';
 
 // Sala 4:
