@@ -48,6 +48,7 @@
             <div class="plyr__video-embed" id="player">
               <iframe
                 src="https://www.youtube.com/embed/W3GKoe8uAxg?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;autoplay=1"
+                id="videoID5"
                 allowfullscreen
                 allowtransparency
                 allow="autoplay; fullscreen"
@@ -101,6 +102,9 @@
     <script src="controle-salas.js"></script>
     <script>
       document.querySelector("#tituloDescricao5").innerHTML = 'KM Brasil 2020 - ' + sala5TituloMenu;
+      
+      var youtubePrefix = "https://www.youtube.com/embed/" + sala5VideoID + "?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;autoplay=1"
+      document.querySelector("#videoID5").src = youtubePrefix;
     </script>
     <!-- Optional JavaScript -->
     <!-- plyr JavaScript -->
