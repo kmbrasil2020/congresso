@@ -34,6 +34,7 @@
             <a class="nav-item nav-link ref-sala-2" href="sala2.html">SALA 2</a>
             <a class="nav-item nav-link ref-sala-3 active" href="sala3.html">SALA 3</a>
             <a class="nav-item nav-link ref-sala-4" href="sala4.html">SALA 4</a>
+            <a class="nav-item nav-link ref-sala-5" href="sala5.html">SALA 5</a>
             <a class="nav-item nav-link" href="http://www.kmbrasil.org/programa-descricao.html">PALESTRANTES</a>
           </div>
         </div>
@@ -57,26 +58,24 @@
           <div class="col-md-4 order-md-1">
             <div class="menu-lateral-list list-group ">
               <a href="sala1.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-1">
-                <span class="menu-lateral-item-sala">SALA 1 </span><img src="https://disease.sh/assets/img/flags/br.png" id="flag" width="30px">
-                <h5 class="menu-lateral-item-title">PAINEL: INOVAÇÃO DIGITAL SETORIAL</h5>
+                <span class="menu-lateral-item-sala">SALA 1 </span><img src="https://disease.sh/assets/img/flags/br.png" id="flag1" width="30px">
+                <h5 class="menu-lateral-item-title" id="TituloMenu1"></h5>
               </a>
               <a href="sala2.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-2">
-                <span class="menu-lateral-item-sala">SALA 2 <img src="https://disease.sh/assets/img/flags/us.png" id="flag" width="30px"></span>
-                <h5 class="menu-lateral-item-title">PAINEL: INOVAÇÃO DIGITAL SETORIAL</h5>
+                <span class="menu-lateral-item-sala">SALA 2 <img src="https://disease.sh/assets/img/flags/us.png" id="flag2" width="30px"></span>
+                <h5 class="menu-lateral-item-title" id="TituloMenu2"></h5>
               </a>
               <a href="sala3.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-3 active">
-                <span class="menu-lateral-item-sala">SALA 3 <img src="https://disease.sh/assets/img/flags/br.png" id="flag" width="30px"></span>
-                <h5 class="menu-lateral-item-title">Apresentação de Trabalhos</h5>
+                <span class="menu-lateral-item-sala">SALA 3 <img src="https://disease.sh/assets/img/flags/br.png" id="flag3" width="30px"></span>
+                <h5 class="menu-lateral-item-title" id="TituloMenu3"></h5>
               </a>
-
               <a href="sala4.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-4">
-                <span class="menu-lateral-item-sala">SALA 4 </span>
-                <h5 class="menu-lateral-item-title">HAIFA UNIVERSITY</h5>
+                <span class="menu-lateral-item-sala">SALA 4 <img src="https://disease.sh/assets/img/flags/br.png" id="flag4" width="30px"></span>
+                <h5 class="menu-lateral-item-title" id="TituloMenu4"></h5>
               </a>
-
               <a href="sala5.html" class="menu-lateral-item list-group-item list-group-item-action ref-sala-5">
-                <span class="menu-lateral-item-sala">SALA 5 </span>
-                <h5 class="menu-lateral-item-title">CONSÓRCIO DOUTORAL</h5>
+                <span class="menu-lateral-item-sala">SALA 5 <img src="https://disease.sh/assets/img/flags/br.png" id="flag5" width="30px"></span>
+                <h5 class="menu-lateral-item-title" id="TituloMenu5"></h5>
               </a>
             </div>
           </div>
@@ -86,47 +85,29 @@
         <div class="row player-description">
           <div class="col mb-3 mt-4">
             <h6>VOCÊ ESTÁ ASSISTINDO:</h6>
-            <h2>KM Brasil 2020 - Sessão de Apresentação de Trabalhos</h2>
+            <h2 id="tituloDescricao3">KM Brasil 2020 - Sessão de Apresentação de Trabalhos</h2>
             <hr type="solid">
             <p class="mb-1 mt-1">
-              <strong></strong><br>
-              <br>
+            Prof. Dr. Wilson Levy 
+            <br>
+            Prof. Dr. Fredy Lopez-Perez 
+            <br>
+            Prof. Dr. Mauricio Andrez
+            <br>
+            Prof. Dr. Gustavo Mesch
+            <br><br>
             </p>
-            <a class="btn btn-info" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSdjuKdm58hQ5gISySxxfWHyRfjH0or8dAsP-QMB5oDup3ftEw/viewform?usp=sf_link','_blank')">Envie sua pergunta</a>
-            <a class="btn btn-danger" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSdIMAdYk3ZVu6bYc1xPvzbX93QimkFiYIiBkyQt2p8wIw90yg/viewform?usp=sf_link','_blank')">Lista de Presença</a>
+            <a class="btn btn-info" onclick=" window.open(sala3FormPerguntas,'_blank')">Envie sua pergunta</a>
+            <a class="btn btn-danger" onclick=" window.open(sala3FormPresenca,'_blank')">Lista de Presença</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!--
-    <script>    
-      // Escondendo a barra de reprodução
-      progressElementTarget = document.querySelector(".plyr__progress");
-      progressElementTarget.style = "display: none;";
-  
-      // Escondendo o número da barra de reprodução
-      progressNumberElementTarget = document.querySelector(".plyr__time--current"); 
-      progressNumberElementTarget.style = "display: none;";
-  
-      // Bolinha vermelha do AO VIVO
-      aoVivoRedElement = document.createElement("SPAN");
-      aoVivoRedElement.style = "color: red;";
-      aoVivoRedElement.textContent = "●";
-  
-      // Criando o Elemento AO VIVO
-      newAovivoElement = document.createElement("DIV");
-      newAovivoElement.class= "plyr__controls__item plyr__time";
-      newAovivoElement.textContent = " AO VIVO";
-      newAovivoElement.insertBefore(aoVivoRedElement, newAovivoElement.childNodes[0]);
-  
-      // Encontrando a DIV dos controles
-      targetInsertAoVivo = document.querySelector(".plyr__controls");
-      // Inserindo o elemento AO VIVO
-      targetInsertAoVivo.insertBefore(newAovivoElement, targetInsertAoVivo.childNodes[3]);
-      </script>
-    -->
-
+    <script src="controle-salas.js"></script>
+    <script>
+      document.querySelector("#tituloDescricao3").innerHTML = 'KM Brasil 2020 - ' + sala3TituloMenu;
+    </script>
     <!-- Optional JavaScript -->
     <!-- plyr JavaScript -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>/script>
