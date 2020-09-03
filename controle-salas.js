@@ -1,9 +1,9 @@
 // Sala 1:
 var sala1Bandeira = 'br';
-var sala1TituloMenu = 'A Descontinuidade da Gestão Pública e a GC';
+var sala1TituloMenu = 'Transformação Digital e GC no Governo';
 //var sala1TituloDescricao = 'titulo Sala 1';
-var sala1FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSfA3Ka4w1N109EfvHO8eN4o0b1NHDGQ0tnGpLbQpoII8_ELSg/viewform?usp=sf_link';
-var sala1FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSe8bNF8P8RaMYIxB_wnJCcW7PExv2S4Do4SWerCKxE0p51qqw/viewform?usp=sf_link';
+var sala1FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSeAfywC12xHNXHawLyLMnPgu1kHpjswNTUbhVzDhd7UwKAzPg/viewform?usp=sf_link';
+var sala1FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSeJW8qqJpXfggFZG3JfeOrLB7FtIeXv9b3FeuE0aNfyFZjd3w/viewform?usp=sf_link';
 //var sala1Descricao = 'Filipe';
 
 // Sala 2:
@@ -32,10 +32,10 @@ var sala4FormPresenca = sala3FormPresenca;
 
 // Sala 4:
 var sala5Bandeira = 'br';
-var sala5TituloMenu = 'Trilha de Casos: Programas de GC e Transformação Digital';
+var sala5TituloMenu = 'Trilha de Casos: Práticas de GC';
 //var sala5TituloDescricao = 'titulo Sala 5';
-var sala5FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSdTNXAXJQQjEVBMDyQZ1PY1Hqg6NyC6olRitKvsRR_PyOyeXQ/viewform?usp=sf_link';
-var sala5FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSdmpRBpSiYmhzFklCsnm0vlEXP1D425Zn8h0TvT-E6RXFvnPg/viewform?usp=sf_link';
+var sala5FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLScImz8SR6TxmuolcgPIrGLPX3lcoAQjnvk7txvz9FdmiUBv7Q/viewform?usp=sf_link';
+var sala5FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSeBvLgWmJlSCNVEVzkRIZsRKzah52YPqz1XezAQAqDHoCUSrg/viewform?usp=sf_link';
 //var sala5Descricao = '';
 var sala5VideoID = '-RGRnv2Je5U';
 
