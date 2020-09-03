@@ -15,7 +15,7 @@ var sala2FormPresenca = sala1FormPresenca;
 //var sala2Descricao = 'descrição Sala 2';
 
 // Sala 3:
-var sala3Bandeira = 'us';
+var sala3Bandeira = 'br';
 var sala3TituloMenu = 'KM Applied for Art Imagitec';
 //var sala3TituloDescricao = 'titulo Sala 3';
 var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSdqsWo2N53KzSV1v9PPIWXPWPxe8aWlKJWZcSCy4UW3JMoPQw/viewform?usp=sf_link';
@@ -23,7 +23,7 @@ var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLScVui0JiHJ627t
 //var sala3Descricao = 'descrição Sala 3';
 
 // Sala 4:
-var sala4Bandeira = 'br';
+var sala4Bandeira = 'us';
 var sala4TituloMenu = sala3TituloMenu;
 //var sala4TituloDescricao = 'titulo Sala 4';
 var sala4FormPerguntas = sala3FormPerguntas;
