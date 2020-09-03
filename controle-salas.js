@@ -1,10 +1,10 @@
 // Sala 1:
 var sala1Bandeira = 'br';
-var sala1TituloMenu = 'Empresas Digitais GC como Alicerce da Transformação Digital';
+var sala1TituloMenu = 'Tecnologia da Informação Inteligente e Gestão do Conhecimento';
 //var sala1TituloDescricao = 'titulo Sala 1';
-var sala1FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLScjdBmOfRUxxcWjhR-Ud6Z2K-s-t_zDA4J83aAGb_pEHgJILg/viewform?usp=sf_link';
-var sala1FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSdbqhQo90TyBOYQmTFb_aIIsux2uPWkTCpdZTiMZIOYPPtt2A/viewform?usp=sf_link';
-var sala1Descricao = 'Filipe';
+var sala1FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSdHpF72iDFi35EHlV6o2CNxdb5x_ryxVX0sNXtanDAUPPdumQ/viewform?usp=sf_link';
+var sala1FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSf42H62JRlycIQCBLwS4EmDWWiTmbOD7_PqERpkkVj_ZlS3HQ/viewform?usp=sf_link';
+//var sala1Descricao = 'Filipe';
 
 // Sala 2:
 var sala2Bandeira = 'us';
@@ -12,15 +12,15 @@ var sala2TituloMenu = sala1TituloMenu;
 //var sala2TituloDescricao = 'titulo Sala 2';
 var sala2FormPerguntas = sala1FormPerguntas;
 var sala2FormPresenca = sala1FormPresenca;
-var sala2Descricao = 'descrição Sala 2';
+//var sala2Descricao = 'descrição Sala 2';
 
 // Sala 3:
 var sala3Bandeira = 'us';
-var sala3TituloMenu = 'KM as a Supporting Tool for Urban Organizing';
+var sala3TituloMenu = 'THE KM Role for Environmental Policies Definition';
 //var sala3TituloDescricao = 'titulo Sala 3';
-var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSf_mZB6wM0oEDP-cCLQq5DgYLWjvns_LK8mOZ7Zcp45s66bkg/viewform?usp=sf_link';
-var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSfI2L-UiSrfkxIeviyXSBCDpYnmoiD6KV8lPbgnkS-jhVKnoA/viewform?usp=sf_link';
-var sala3Descricao = 'descrição Sala 3';
+var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSd7Rtc6dceXXqoDMaAP_m-772jgzOORoTlrAFPQvt9tkA-cxw/viewform?usp=sf_link';
+var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLScWQt6jkcfS4ce0JeBBEu1Dx1PkYZ7vEPPJ-mHjTLhlGrt8kg/viewform?usp=sf_link';
+//var sala3Descricao = 'descrição Sala 3';
 
 // Sala 4:
 var sala4Bandeira = 'br';
@@ -28,7 +28,7 @@ var sala4TituloMenu = sala3TituloMenu;
 //var sala4TituloDescricao = 'titulo Sala 4';
 var sala4FormPerguntas = sala3FormPerguntas;
 var sala4FormPresenca = sala3FormPresenca;
-var sala4Descricao = 'descrição Sala 4';
+//var sala4Descricao = 'descrição Sala 4';
 
 // Sala 4:
 var sala5Bandeira = 'us';
@@ -36,7 +36,7 @@ var sala5TituloMenu = 'VAZIA';
 //var sala5TituloDescricao = 'titulo Sala 5';
 var sala5FormPerguntas = '';
 var sala5FormPresenca = '';
-var sala5Descricao = '';
+//var sala5Descricao = '';
 var sala5VideoID = 'z6BXPbTpP9Y';
 
 
