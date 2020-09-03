@@ -16,10 +16,10 @@ var sala2FormPresenca = sala1FormPresenca;
 
 // Sala 3:
 var sala3Bandeira = 'us';
-var sala3TituloMenu = 'KM as a Supporting Tool for COVID-19 Crisis Mitigation';
+var sala3TituloMenu = 'KM Applied for Art Imagitec';
 //var sala3TituloDescricao = 'titulo Sala 3';
-var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSelrsJSo3053ZZRi6iARwE1BGO-KOKN1iQYwtamCp_oy8XqBw/viewform?usp=sf_link';
-var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSfuRKXrjKjt4hm6YalQlIG0vMkfXNFUGvSRbSMPBE6KlFkWfw/viewform?usp=sf_link';
+var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSdqsWo2N53KzSV1v9PPIWXPWPxe8aWlKJWZcSCy4UW3JMoPQw/viewform?usp=sf_link';
+var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLScVui0JiHJ627tR1WmXphk1OcwcODQBVEVzHk1-xFbxh0UxbA/viewform?usp=sf_link';
 //var sala3Descricao = 'descrição Sala 3';
 
 // Sala 4:
