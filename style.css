@@ -162,10 +162,10 @@ body {
     display: none !important;
   }
   .ref-sala-1 {
-    display: reset;
+    display: none;
   }
   .ref-sala-2 {
-    display: reset;
+    display: none;
   }
   .ref-sala-3 {
     display: none;
