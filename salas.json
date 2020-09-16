@@ -1,0 +1,17 @@
+{
+    "nome": "Programação SBGC",
+    "1DiaManhã": [
+        {
+            "titulo": "Título 1",
+            "Descrição": "Palestra 1" ,
+            "bandeira": "br",
+            "youtubeLink": "link1" 
+        },
+        {
+            "titulo": "Título 2",
+            "Descrição": "Palestra 2" ,
+            "bandeira": "us",
+            "youtubeLink": "link2" 
+        }
+    ]
+}
