@@ -1,6 +1,6 @@
 // Sala 1:
 var sala1Bandeira = 'br';
-var sala1TituloMenu = 'Prêmio Acadêmico e ​Celebração';
+var sala1TituloMenu = 'Teste Biofotonica';
 //var sala1TituloDescricao = 'titulo Sala 1';
 var sala1FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSeAfywC12xHNXHawLyLMnPgu1kHpjswNTUbhVzDhd7UwKAzPg/viewform?usp=sf_link';
 var sala1FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSeJW8qqJpXfggFZG3JfeOrLB7FtIeXv9b3FeuE0aNfyFZjd3w/viewform?usp=sf_link';
