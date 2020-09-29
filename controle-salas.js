@@ -1,6 +1,6 @@
 // Sala 1:
 var sala1Bandeira = 'br';
-var sala1TituloMenu = 'Teste Biofotonica';
+var sala1TituloMenu = 'Sala 1';
 //var sala1TituloDescricao = 'titulo Sala 1';
 var sala1FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSeAfywC12xHNXHawLyLMnPgu1kHpjswNTUbhVzDhd7UwKAzPg/viewform?usp=sf_link';
 var sala1FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLSeJW8qqJpXfggFZG3JfeOrLB7FtIeXv9b3FeuE0aNfyFZjd3w/viewform?usp=sf_link';
@@ -16,7 +16,7 @@ var sala2FormPresenca = sala1FormPresenca;
 
 // Sala 3:
 var sala3Bandeira = 'br';
-var sala3TituloMenu = 'KM Applied for Art Imagitec';
+var sala3TituloMenu = 'Sala 2';
 //var sala3TituloDescricao = 'titulo Sala 3';
 var sala3FormPerguntas = 'https://docs.google.com/forms/d/e/1FAIpQLSdqsWo2N53KzSV1v9PPIWXPWPxe8aWlKJWZcSCy4UW3JMoPQw/viewform?usp=sf_link';
 var sala3FormPresenca = 'https://docs.google.com/forms/d/e/1FAIpQLScVui0JiHJ627tR1WmXphk1OcwcODQBVEVzHk1-xFbxh0UxbA/viewform?usp=sf_link';
