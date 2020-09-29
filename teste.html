@@ -68,6 +68,7 @@
       <!--END HERO-->
       </div>
 
+      <div id="app">
       <div class="container mb-5">
 
         <div class="row mb-2 mt-4" style="justify-content: center">
@@ -77,180 +78,122 @@
         <div class="row mb-2 mt-4" style="justify-content: center">
           <h3 style="color: #1A3753; font-weight: 600; ">Pré-evento</h3>
         </div>
-        
+        <hr>
+
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-          <div class="col mb-4">
+          <!-- Template Vue 1 -->
+          <div class="col mb-4" v-for="palestra in preEvento">
             <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/1.png" data-plyr-embed-id="GzUpOyiQf0g"></div>
+              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" v-bind:data-plyr-embed-id="palestra.youtubeLink"></div>
               <div class="card-body">
-                <h5 class="card-title">Trilha de Casos Iniciativas de GC</h5>
-                <p class="card-text">Caso 1: Projeto GC na área de P&D da BRF S/A
-                  <br>Caso 2: Gestão do Conhecimento - Um olhar para a Fundação Oswaldo Cruz</p>
+                <h5 class="card-title">{{palestra.titulo}} <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.bandeira + '.png'"  width="25px"></h5>
+                <p class="card-text">
+                  {{palestra.descricao}}
+                </p> 
               </div>
             </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/2.png" data-plyr-embed-id="jHGl5gwP_dI"></div>
-              <div class="card-body">
-                <h5 class="card-title">​Trilha de Casos: GC e Gestão Pública</h5>
-                <p class="card-text">Caso 1:  Automatização do Serviço de Publicação de Atos Oficiais - MPF
-                  <br>Projeto Gestão do Conhecimento e Programa de Desligamento Assistido - FINEP</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="i6RJQdWo4_8"></div>
-              <div class="card-body">
-                <h5 class="card-title">Trilha de Casos: Praticas de GC</h5>
-                <p class="card-text">Caso 1: Simulação - Petrobras Transporte S/A TRANSPETRO
-                  <br>Caso 2: Lições Aprendidas - Itaguai Construções Navais S.A (ICN)</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/3.png" data-plyr-embed-id="lg_K63M656s"></div>
-              <div class="card-body">
-                <h5 class="card-title">Mesa redonda: Conhecimento Críticos</h5>
-                <p class="card-text">Caso 1: Mapeamento do Conhecimento Crítico - AVIBRAS
-                  <br>Caso 2: O uso do mapeamento do conhecimento crítico como estratégia de avaliação do nível de prontidão na área hospitalar - Hospital Albert Einstein</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/4.png" data-plyr-embed-id="_VwHJkhxznU"></div>
-              <div class="card-body">
-                <h5 class="card-title">Trilha de Casos: GC no Setor Bancário</h5>
-                <p class="card-text">Caso 1: Mentoria Técnica na Inspetoria GC do Banco  Bradesco
-                  <br>Caso 2: Soluções para identificação e localização de talentos e planejamentos no Banco Central do Brasil</p>
-              </div>
-            </div>
-          </div>
+          </div> <!-- Fim Template Vue 1 -->
         </div>
+        
       </div>
 
-      <!-- Dia 1 -->
+      <!-- Dia 1 de Setembro -->
       <div class="container mb-5">
         <div class="row mb-2 mt-4" style="justify-content: center">
-          <h3 style="color: #1A3753; font-weight: 600; ">1° dia</h3>
+          <h3 style="color: #1A3753; font-weight: 600; ">1 de Setembro</h3>
         </div>
       <hr>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-
-
-
-          <!--
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/1.png" data-plyr-embed-id="jHGl5gwP_dI"></div>
-              <div class="card-body">
-                <h5 class="card-title">​Modelo de Referência SBGC</h5>
-                <p class="card-text">
-                </p>
-              </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <!-- Template Vue 1 -->
+        <div class="col mb-4" v-for="palestra in palestras1">
+          <div class="card">
+            <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" v-bind:data-plyr-embed-id="palestra.youtubeLink"></div>
+            <div class="card-body">
+              <h5 class="card-title">{{palestra.titulo}} <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.bandeira + '.png'"  width="25px"></h5>
+              <p class="card-text">
+                {{palestra.descricao}}
+              </p> 
             </div>
           </div>
-          -->
-
-
-
-        </div>
+        </div> <!-- Fim Template Vue 1 -->
+      </div>
       </div>
 
 
-      <!-- Dia 2 -->
+      <!-- Dia 2 de Setembro -->
       <div class="container mb-5">
         <div class="row mb-2 mt-4" style="justify-content: center">
-          <h3 style="color: #1A3753; font-weight: 600; ">2° dia</h3>
+          <h3 style="color: #1A3753; font-weight: 600; ">2 de Setembro</h3>
         </div>
         <hr>
   
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-
-          </div>
-        </div>
-
-      <!-- Dia 3 -->
-      <div class="container mb-5">
-        <div class="row mb-2 mt-4" style="justify-content: center">
-          <h3 style="color: #1A3753; font-weight: 600; ">3° dia</h3>
-        </div>
-        <hr>
-  
-        <div id="app">
-
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-            <div class="col mb-4" v-for="palestra in palestras">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="2bru-NGhU2s"></div>
-                <div class="card-body">
-                  <h5 class="card-title">{{palestra.titulo}}
-                  </h5>
-                  <p class="card-text">
-                    <button type="button" class="btn btn-primary" onClick="">
-                      Original
-                      <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.original.bandeira + '.png'" width="25px">
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Original
-                      <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.original.bandeira + '.png'"  width="25px">
-                    </button>
-                  </p>
-                </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <!-- Template Vue 2 -->
+          <div class="col mb-4" v-for="palestra in palestras2">
+            <div class="card">
+              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" v-bind:data-plyr-embed-id="palestra.youtubeLink"></div>
+              <div class="card-body">
+                <h5 class="card-title">{{palestra.titulo}} <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.bandeira + '.png'"  width="25px"></h5>
+                <p class="card-text">
+                  {{palestra.descricao}}
+                </p> 
               </div>
             </div>
+          </div> <!-- Fim Template Vue 2 -->
+        </div>
+        </div>
 
+      <!-- Dia 3 de Setembro -->
+      <div class="container mb-5">
+        <div class="row mb-2 mt-4" style="justify-content: center">
+          <h3 style="color: #1A3753; font-weight: 600; ">3 de Setembro</h3>
+        </div>
+        <hr>
+        
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <!-- Template Vue 3 -->
+            <div class="col mb-4" v-for="palestra in palestras3">
+              <div class="card">
+                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" v-bind:data-plyr-embed-id="palestra.youtubeLink"></div>
+                <div class="card-body">
+                  <h5 class="card-title">{{palestra.titulo}} <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.bandeira + '.png'"  width="25px"></h5>
+                  <p class="card-text">
+                    {{palestra.descricao}}
+                  </p> 
+                </div>
+              </div>
+            </div> <!-- Fim Template Vue 3 -->
           </div>
+        </div> <!-- Fim App Vue -->
 
+        <!-- Pós-evento -->
+      <div class="container mb-5">
+        <div class="row mb-2 mt-4" style="justify-content: center">
+          <h3 style="color: #1A3753; font-weight: 600; ">Pós evento</h3>
         </div>
-
+        <hr>
+        
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <!-- Template Vue 3 -->
+            <div class="col mb-4" v-for="palestra in palestra4">
+              <div class="row mb-2 mt-4" style="justify-content: center">
+                <h3 style="color: #1A3753; font-weight: 600; ">{{palestra.data}}</h3>
+              </div>
+              <div class="card">
+                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" v-bind:data-plyr-embed-id="palestra.youtubeLink"></div>
+                <div class="card-body">
+                  <h5 class="card-title">{{palestra.titulo}} <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.bandeira + '.png'"  width="25px"></h5>
+                  <p class="card-text">
+                    {{palestra.descricao}}
+                  </p> 
+                </div>
+              </div>
+            </div> <!-- Fim Template Vue 3 -->
+          </div>
+        </div> <!-- Fim App Vue -->
           
-        </div>
-
-
-      <script>
-        var app = new Vue({
-          el: '#app',
-          data: {
-            palestras: [
-              {
-                titulo: "Título 1",
-                Descrição: "Palestra 1" ,
-                youtubeLink: "link1",
-                original: {link: "google.html", bandeira: "us"},
-                traduzido: {link: "google.html", bandeira: "br"}
-              },
-              {
-                titulo: "Título 2",
-                Descrição: "Palestra 2" ,
-                youtubeLink: "link2",
-                original: {link: "google.html", bandeira: "us"},
-                traduzido: {link: "google.html", bandeira: "br"}
-              },
-              {
-                titulo: "Título 3",
-                Descrição: "Palestra 3" ,
-                youtubeLink: "link3",
-                original: {link: "google.html", bandeira: "us"},
-                traduzido: {link: "google.html", bandeira: "br"}
-              }
-            ]
-          },
-          method: {
-            irparasite(producturl){
-            this.window.location.href = producturl
-            }
-        })
-      </script>
-      
-
+      </div>
 
       <footer class="footer" style="background-color: black;">
         <div class="container-fluid footer-content">
@@ -261,7 +204,7 @@
 
     <!-- Optional JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
+    <script src="app.pages.js"></script>
     <!-- plyr JavaScript -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
