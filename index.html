@@ -12,7 +12,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- plyr CSS -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css"/>  
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css"/>
+    
+    <script src="https://unpkg.com/vue"></script>
 
     <title>Hall Principal SBGC</title>
   </head>
@@ -66,6 +68,7 @@
       <!--END HERO-->
       </div>
 
+      <div id="app">
       <div class="container mb-5">
 
         <div class="row mb-2 mt-4" style="justify-content: center">
@@ -75,333 +78,122 @@
         <div class="row mb-2 mt-4" style="justify-content: center">
           <h3 style="color: #1A3753; font-weight: 600; ">Pré-evento</h3>
         </div>
-        
+        <hr>
+
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-          <div class="col mb-4">
+          <!-- Template Vue 1 -->
+          <div class="col mb-4" v-for="palestra in preEvento">
             <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/1.png" data-plyr-embed-id="GzUpOyiQf0g"></div>
+              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" v-bind:data-plyr-embed-id="palestra.youtubeLink"></div>
               <div class="card-body">
-                <h5 class="card-title">Trilha de Casos Iniciativas de GC</h5>
-                <p class="card-text">Caso 1: Projeto GC na área de P&D da BRF S/A
-                  <br>Caso 2: Gestão do Conhecimento - Um olhar para a Fundação Oswaldo Cruz</p>
+                <h5 class="card-title">{{palestra.titulo}} <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.bandeira + '.png'"  width="25px"></h5>
+                <p class="card-text">
+                  {{palestra.descricao}}
+                </p> 
               </div>
             </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/2.png" data-plyr-embed-id="jHGl5gwP_dI"></div>
-              <div class="card-body">
-                <h5 class="card-title">​Trilha de Casos: GC e Gestão Pública</h5>
-                <p class="card-text">Caso 1:  Automatização do Serviço de Publicação de Atos Oficiais - MPF
-                  <br>Projeto Gestão do Conhecimento e Programa de Desligamento Assistido - FINEP</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="i6RJQdWo4_8"></div>
-              <div class="card-body">
-                <h5 class="card-title">Trilha de Casos: Praticas de GC</h5>
-                <p class="card-text">Caso 1: Simulação - Petrobras Transporte S/A TRANSPETRO
-                  <br>Caso 2: Lições Aprendidas - Itaguai Construções Navais S.A (ICN)</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/3.png" data-plyr-embed-id="lg_K63M656s"></div>
-              <div class="card-body">
-                <h5 class="card-title">Mesa redonda: Conhecimento Críticos</h5>
-                <p class="card-text">Caso 1: Mapeamento do Conhecimento Crítico - AVIBRAS
-                  <br>Caso 2: O uso do mapeamento do conhecimento crítico como estratégia de avaliação do nível de prontidão na área hospitalar - Hospital Albert Einstein</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/4.png" data-plyr-embed-id="_VwHJkhxznU"></div>
-              <div class="card-body">
-                <h5 class="card-title">Trilha de Casos: GC no Setor Bancário</h5>
-                <p class="card-text">Caso 1: Mentoria Técnica na Inspetoria GC do Banco  Bradesco
-                  <br>Caso 2: Soluções para identificação e localização de talentos e planejamentos no Banco Central do Brasil</p>
-              </div>
-            </div>
-          </div>
+          </div> <!-- Fim Template Vue 1 -->
         </div>
+        
       </div>
 
-      <!-- Dia 1 -->
+      <!-- Dia 1 de Setembro -->
       <div class="container mb-5">
         <div class="row mb-2 mt-4" style="justify-content: center">
-          <h3 style="color: #1A3753; font-weight: 600; ">1° dia</h3>
+          <h3 style="color: #1A3753; font-weight: 600; ">1 de Setembro</h3>
         </div>
       <hr>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="UtXZorLDRaU?t=126"></div>
-              <div class="card-body">
-                <h5 class="card-title">Abertura: SBGC KMBrasil 2020
-                <img src="https://disease.sh/assets/img/flags/br.png" width="25px">
-                </h5>
-                <p class="card-text">
-                </p>
-              </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <!-- Template Vue 1 -->
+        <div class="col mb-4" v-for="palestra in palestras1">
+          <div class="card">
+            <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" v-bind:data-plyr-embed-id="palestra.youtubeLink"></div>
+            <div class="card-body">
+              <h5 class="card-title">{{palestra.titulo}} <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.bandeira + '.png'"  width="25px"></h5>
+              <p class="card-text">
+                {{palestra.descricao}}
+              </p> 
             </div>
           </div>
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="UtXZorLDRaU"></div>
-                <div class="card-body">
-                  <h5 class="card-title">Abertura: SBGC KMBrasil 2020
-                  <img src="https://disease.sh/assets/img/flags/us.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          <!--
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="assets/1.png" data-plyr-embed-id="jHGl5gwP_dI"></div>
-              <div class="card-body">
-                <h5 class="card-title">​Modelo de Referência SBGC</h5>
-                <p class="card-text">
-                </p>
-              </div>
-            </div>
-          </div>
-          -->
-
-          <div class="col mb-4">
-            <div class="card">
-              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="tTGtmkRpP7g"></div>
-              <div class="card-body">
-                <h5 class="card-title">​Keynote Speaker: TechnipFMC
-                <img src="https://disease.sh/assets/img/flags/us.png" width="25px">
-                </h5>
-                <p class="card-text">
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
+        </div> <!-- Fim Template Vue 1 -->
+      </div>
       </div>
 
 
-      <!-- Dia 2 -->
+      <!-- Dia 2 de Setembro -->
       <div class="container mb-5">
         <div class="row mb-2 mt-4" style="justify-content: center">
-          <h3 style="color: #1A3753; font-weight: 600; ">2° dia</h3>
+          <h3 style="color: #1A3753; font-weight: 600; ">2 de Setembro</h3>
         </div>
         <hr>
   
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="60RET2EBxvo"></div>
-                <div class="card-body">
-                  <h5 class="card-title">Sessão de Palestras - Manhã
-                  <img src="https://disease.sh/assets/img/flags/br.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <!-- Template Vue 2 -->
+          <div class="col mb-4" v-for="palestra in palestras2">
+            <div class="card">
+              <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" v-bind:data-plyr-embed-id="palestra.youtubeLink"></div>
+              <div class="card-body">
+                <h5 class="card-title">{{palestra.titulo}} <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.bandeira + '.png'"  width="25px"></h5>
+                <p class="card-text">
+                  {{palestra.descricao}}
+                </p> 
               </div>
             </div>
-
-              <div class="col mb-4">
-                <div class="card">
-                  <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="S_zOfH7O4zA"></div>
-                  <div class="card-body">
-                    <h5 class="card-title">Sessão de Palestras - Manhã
-                    <img src="https://disease.sh/assets/img/flags/us.png" width="25px">
-                    </h5>
-                    <p class="card-text">
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="h4twLu9Qk60"></div>
-                <div class="card-body">
-                  <h5 class="card-title">​Sessão de Palestras - Tarde
-                  <img src="https://disease.sh/assets/img/flags/br.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="hZ4HBlMMgYI"></div>
-                <div class="card-body">
-                  <h5 class="card-title">​Sessão de Palestras - Tarde
-                  <img src="https://disease.sh/assets/img/flags/us.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="fUCkL58Wov4"></div>
-                <div class="card-body">
-                  <h5 class="card-title">​Apresentação de Trabalhos - Manhã
-                  <img src="https://disease.sh/assets/img/flags/br.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
+          </div> <!-- Fim Template Vue 2 -->
+        </div>
         </div>
 
-      <!-- Dia 3 -->
+      <!-- Dia 3 de Setembro -->
       <div class="container mb-5">
         <div class="row mb-2 mt-4" style="justify-content: center">
-          <h3 style="color: #1A3753; font-weight: 600; ">3° dia</h3>
+          <h3 style="color: #1A3753; font-weight: 600; ">3 de Setembro</h3>
         </div>
         <hr>
-  
+        
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col mb-4">
+            <!-- Template Vue 3 -->
+            <div class="col mb-4" v-for="palestra in palestras3">
               <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="60RET2EBxvo"></div>
+                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" v-bind:data-plyr-embed-id="palestra.youtubeLink"></div>
                 <div class="card-body">
-                  <h5 class="card-title">Sessão de Palestras - Manhã
-                  <img src="https://disease.sh/assets/img/flags/br.png" width="25px">
-                  </h5>
+                  <h5 class="card-title">{{palestra.titulo}} <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.bandeira + '.png'"  width="25px"></h5>
                   <p class="card-text">
-                  </p>
+                    {{palestra.descricao}}
+                  </p> 
                 </div>
               </div>
-            </div>
-
-              <div class="col mb-4">
-                <div class="card">
-                  <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="S_zOfH7O4zA"></div>
-                  <div class="card-body">
-                    <h5 class="card-title">Sessão de Palestras - Manhã
-                    <img src="https://disease.sh/assets/img/flags/us.png" width="25px">
-                    </h5>
-                    <p class="card-text">
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="VTa-cVEyL9A"></div>
-                <div class="card-body">
-                  <h5 class="card-title">​Sessão de Palestras - Tarde
-                  <img src="https://disease.sh/assets/img/flags/br.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="hoOSJGvWk4s"></div>
-                <div class="card-body">
-                  <h5 class="card-title">​Sessão de Palestras - Tarde
-                  <img src="https://disease.sh/assets/img/flags/us.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="fUCkL58Wov4"></div>
-                <div class="card-body">
-                  <h5 class="card-title">​Apresentação de Trabalhos - Manhã
-                  <img src="https://disease.sh/assets/img/flags/br.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="5wtvpPMcwBk"></div>
-                <div class="card-body">
-                  <h5 class="card-title">​Apresentação de Trabalhos - Manhã
-                  <img src="https://disease.sh/assets/img/flags/br.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="2bru-NGhU2s"></div>
-                <div class="card-body">
-                  <h5 class="card-title">​Apresentação de Trabalhos - Tarde
-                  <img src="https://disease.sh/assets/img/flags/us.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id="EqM3jvoW0xY"></div>
-                <div class="card-body">
-                  <h5 class="card-title">​Apresentação de Trabalhos - Tarde
-                  <img src="https://disease.sh/assets/img/flags/br.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!--
-            <div class="col mb-4">
-              <div class="card">
-                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" data-plyr-embed-id=""></div>
-                <div class="card-body">
-                  <h5 class="card-title">​Trilha de Casos
-                  <img src="https://disease.sh/assets/img/flags/br.png" width="25px">
-                  </h5>
-                  <p class="card-text">
-                  </p>
-                </div>
-              </div>
-            </div>
-          -->
-
+            </div> <!-- Fim Template Vue 3 -->
           </div>
-        </div>
+        </div> <!-- Fim App Vue -->
 
+        <!-- Pós-evento -->
+      <div class="container mb-5">
+        <div class="row mb-2 mt-4" style="justify-content: center">
+          <h3 style="color: #1A3753; font-weight: 600; ">Pós evento</h3>
+        </div>
+        <hr>
+        
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <!-- Template Vue 3 -->
+            <div class="col mb-4" v-for="palestra in palestra4">
+              <div class="row mb-2 mt-4" style="justify-content: center">
+                <h3 style="color: #1A3753; font-weight: 600; ">{{palestra.data}}</h3>
+              </div>
+              <div class="card">
+                <div class="js-player card-img-top" data-plyr-provider="youtube" data-poster="" v-bind:data-plyr-embed-id="palestra.youtubeLink"></div>
+                <div class="card-body">
+                  <h5 class="card-title">{{palestra.titulo}} <img v-bind:src="'https://disease.sh/assets/img/flags/' + palestra.bandeira + '.png'"  width="25px"></h5>
+                  <p class="card-text">
+                    {{palestra.descricao}}
+                  </p> 
+                </div>
+              </div>
+            </div> <!-- Fim Template Vue 3 -->
+          </div>
+        </div> <!-- Fim App Vue -->
+          
+      </div>
 
       <footer class="footer" style="background-color: black;">
         <div class="container-fluid footer-content">
@@ -411,12 +203,15 @@
 
 
     <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.pages.js"></script>
     <!-- plyr JavaScript -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 
     <script type="text/javascript">
       $('iframe').on('load', function(){
