@@ -153,19 +153,19 @@ hr {
   font-weight: bold;
 }
 .ref-sala-1 {
-  display: none;
+  display: initial;
 }
 .ref-sala-2 {
-  display: none;
+  display: initial;
 }
 .ref-sala-3 {
-  display: none;
+  display: initial;
 }
 .ref-sala-4 {
-  display: none;
+  display: initial;
 }
 .ref-sala-5 {
-  display: none;
+  display: initial;
 }
 .cards-deck-title {
   font-weight: 700;
